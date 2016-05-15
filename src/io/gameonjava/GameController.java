@@ -2,7 +2,9 @@ package io.gameonjava;
 
 class GameController {
 
-    private Player[] p = {new Player("Mykola"), new Player("Taras"), new Player("Andrii")};
+    private Player[] p = {new Player("Mykola"),
+                          new Player("Taras"),
+                          new Player("Andrii")};
 
     private Player whoIsWin(final int[] playerGuess, final int secretNumber) {
 
