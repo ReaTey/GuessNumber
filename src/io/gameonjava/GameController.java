@@ -6,16 +6,10 @@ class GameController {
 
     private Player whoIsWin(final int[] playerGuess, final int secretNumber) {
 
-        if (playerGuess[0] == secretNumber) {
-            return p[0];
-        }
-
-        if (playerGuess[1] == secretNumber) {
-            return p[1];
-        }
-
-        if (playerGuess[2] == secretNumber) {
-            return p[2];
+        for (int i = 0; i < 3; i++) {
+            if (playerGuess[i] == secretNumber) {
+                return p[i];
+            }
         }
 
         return null;
@@ -29,6 +23,7 @@ class GameController {
 
         while (true) {
             secretNumber = (int)(Math.random() * 10);
+
             System.out.println("The secret number is: " + secretNumber);
 
             for (int i = 0; i < p.length; i++) {
