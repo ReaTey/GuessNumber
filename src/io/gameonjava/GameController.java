@@ -38,9 +38,9 @@ class GameController {
                 System.out.println("We have a winner it\'s player " + winner.getPlayerName());
                 break;
             } else {
-                System.out.println("p1 thinks it is: " + playerGuess[0]);
-                System.out.println("p2 thinks it is: " + playerGuess[1]);
-                System.out.println("p3 thinks it is: " + playerGuess[2]);
+                for (int i = 0; i < 3; i++) {
+                    System.out.println(this.p[i].getPlayerName() + " thinks it is: " + i);
+                }
             }
         }
     }
