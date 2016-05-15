@@ -35,7 +35,7 @@ class GameController {
             Player winner = whoIsWin(playerGuess, secretNumber);
 
             if (winner != null) {
-                System.out.println("We have a winner it\'s player " + winner.getPlayerName());
+                System.out.println("We have a winner! It\'s a player " + winner.getPlayerName());
                 break;
             } else {
                 for (int i = 0; i < 3; i++) {
