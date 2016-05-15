@@ -39,7 +39,7 @@ class GameController {
                 break;
             } else {
                 for (int i = 0; i < 3; i++) {
-                    System.out.println(this.p[i].getPlayerName() + " thinks it is: " + i);
+                    System.out.println(this.p[i].getPlayerName() + " thinks it is: " + playerGuess[i]);
                 }
             }
         }
